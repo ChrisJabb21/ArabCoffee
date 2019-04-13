@@ -1,0 +1,151 @@
+<!---Idea: 
+gallery about Turkish/Arabic Coffee.
+history of turkish coffee
+facts about turkish coffee
+-->
+<!---->
+<!-- Keywords: Grid System -->
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 9]> <html class="oldie ie">
+<![endif]-->
+<!--[if IE 9]> <html class="ie ie9">
+<![endif]-->
+<!--[if gt IE 9]> <html class="ie"><![endif]-->
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>ResponsiveWebDesign L17HandsOn</title>
+    <link rel="stylesheet" href="ResponsiveWebDesign%20L17HandsOn_files/bootstrap.css">
+      <!-- Bootstrap CSS -->
+    <script src="ResponsiveWebDesign%20L17HandsOn_files/jquery.js"></script>
+    <script src="ResponsiveWebDesign%20L17HandsOn_files/bootstrap.js"></script>    
+    <script src="ResponsiveWebDesign%20L17HandsOn_files/script.js"></script>
+    <script src="ResponsiveWebDesign%20L17HandsOn_files/style.css"></script>
+    <style type="text/css">
+      body { background: #FFF5EE !important;} /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+   </style>
+    
+</head>
+
+<!-- create a custom responsive grid layout-->
+<!-- Requirements: four columns and three rows 
+of images and videos -->
+
+
+<!--Requirements: Videos should use the height, width, and controls attributes Preconditions: If I choose to use older browsers, I should see backup images for videos not being displayed. Post-conditions: If the older browsers cannot display my images or videos give me a message to upgrade my browser. Extension points: None.-->
+
+
+<body>
+
+
+<!--Navigation-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">Turkish/Arabic Coffee</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                  <li><a href="http://127.0.0.1:5500/index.html">Gallery</a></li>
+                  <li><a href="http://127.0.0.1:5500/facts.html">Facts</a></li>
+                  <li><a href="http://127.0.0.1:5500/recipe.html">DIY Recipe</a></li>
+
+          </ul>
+      </div>
+  </div>
+</nav> 
+
+
+<!-- TODO Video/image gallery-->
+<!-- Gallery and Video Showcase-->
+<div class="page-header row">
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h1>Gallery</h1>      
+    <p>A tribute and showcase of the traditional coffee style by Chris Jabbour</p>
+  </div>
+  <p>This is some text.</p>      
+  <p>This is another text.</p>      
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="col-xs-3">
+    <img src="ResponsiveWebDesign%20L17HandsOn_files/coffee1.jpg" alt="" width="500">
+  </div>
+  <div class="col-xs-3">
+      <img src="ResponsiveWebDesign%20L17HandsOn_files/coffee2.jpg" alt="" width="500" height="500">
+  </div>
+  <div class="col-xs-3">
+      <img src="ResponsiveWebDesign%20L17HandsOn_files/coffee3.jpg" alt="" width="500" height="500">
+  </div>
+</div>
+</div>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+    </body></html>
+<!--
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aR97onCUeEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+
+ --->

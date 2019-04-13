@@ -1,0 +1,69 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.imgs {
+    height: 100;
+    width: 300;
+    max-height: 180px;
+    max-width: 300px; 
+    flex-basis: 400px;
+
+  }
+
+body {
+    margin: 1em auto;
+   padding: 0 1em;
+   font-family: "Source Sans Pro", sans-serif;
+   font-size: 1.15em;
+   max-width: 35em;
+
+
+}
+
+  
+
+.player {
+    position: relative;
+    padding-top: 56.2757202%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+ }
+ .player iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+ }
+
+p{
+    margin: auto;
+    font-size: 18px;
+}
+
+ul {
+    align-items: flex-start;
+}
+
+
+
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+
+@media screen and (min-width: 24.15em) { /* 21em "gate" * 1.15 font-size */
+    p { line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21))); }
+ }
+ 
+ @media (min-width: 40.25em) { /* 35em "gate" * 1.15 font-size */
+    p { line-height: 1.5em; }
+ }

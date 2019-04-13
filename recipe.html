@@ -1,0 +1,103 @@
+<!-- Keywords: Grid System -->
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 9]> <html class="oldie ie">
+<![endif]-->
+<!--[if IE 9]> <html class="ie ie9">
+<![endif]-->
+<!--[if gt IE 9]> <html class="ie"><![endif]-->
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>ResponsiveWebDesign L17HandsOn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    <script src="script.js"></script>
+    <script src="style.css"></script>
+    <style type="text/css">
+      body { background: #FFF5EE !important;} /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+   </style>
+    
+</head>
+
+<!-- create a custom responsive grid layout-->
+<!-- Requirements: four columns and three rows 
+of images and videos -->
+
+
+<!--Requirements: Videos should use the height, width, and controls attributes Preconditions: If I choose to use older browsers, I should see backup images for videos not being displayed. Post-conditions: If the older browsers cannot display my images or videos give me a message to upgrade my browser. Extension points: None.-->
+
+
+<body>
+
+<!--Navigation-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Turkish/Arabic Coffee</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                  <li><a href="index.html">Gallery</a></li>
+                  <li><a href="facts.html">Facts</a></li>
+                  <li><a href="recipe.html">DIY Recipe</a></li>
+          </ul>
+      </div>
+  </div>
+</nav> 
+
+<!--Body-->
+<!--Header-->
+<div class="page-header row">
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>DIY Recipe</h1>      
+      <p>A link to a video on a way to prepare Turkish Coffee</p>
+    </div>
+
+<div class="container">
+<div class="row">
+    <div class="col-lg-4">
+        <div class="player">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/aR97onCUeEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div>Tips</div>
+
+        <ul>
+            <li>Turkish coffee must always be served with foam on top.</li>
+            <li>If you can't find finely ground Arabic coffee, you can purchase a bag of coffee at any coffeehouse and ask them to grind it for Turkish coffee. You need to have a powder-like consistency.</li>
+            <li>Do not stir after pouring into cups; the foam will collapse.</li>
+            <li>Always use cold water.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+        <div class="col-lg-4">
+
+        <p style="margin-left: 5px">You can use the recipe <a href="https://www.geniuskitchen.com/recipe/turkish-coffee-173525">Here</a></p>    
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>
